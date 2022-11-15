@@ -25,6 +25,10 @@ public class LaptopController {
     }
 
     //metodos
+    @GetMapping("/")
+    public String index(){
+        return "Hola mundo, esta es la app laptops";
+    }
 
     //buscar todos
     @GetMapping("/api/laptops")
